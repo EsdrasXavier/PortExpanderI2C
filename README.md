@@ -4,4 +4,4 @@
 You can use this library to expand more 8 ports on your arduino.
 
 ## I2C Chip
-![alt text](https://github.com/EsdrasXavier/port_expander_i2c/pcf8574.jpg)
+![alt text](https://github.com/EsdrasXavier/port_expander_i2c/blob/master/pcf8574.jpg)
