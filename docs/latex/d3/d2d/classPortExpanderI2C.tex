@@ -1,0 +1,169 @@
+\hypertarget{classPortExpanderI2C}{}\section{Port\+Expander\+I2C Class Reference}
+\label{classPortExpanderI2C}\index{PortExpanderI2C@{PortExpanderI2C}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPortExpanderI2C_ae4f051ad2540a810dfd9edaa8e03c5f7}{Port\+Expander\+I2C}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em This lib is an implementation of port expander using I2C protocol. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPortExpanderI2C_a0720aaddf0dee2b43435b2df22a52a25}{$\sim$\+Port\+Expander\+I2C}} ()
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_ac997f79ae241b47627bd6f74a006c1d4}{init}} ()
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_ab3ddb549621ef8622af037eed5171b71}{pin\+Mode}} (uint8\+\_\+t port, uint8\+\_\+t mode)
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_abcf3cb2908c42bf061933a19b714dc73}{digital\+Write}} (uint8\+\_\+t port, uint8\+\_\+t level)
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_a0f734bdb394c1cf0deebd053ca9a3593}{digital\+Write\+All}} (uint8\+\_\+t levels)
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_a7c686d2a180ca46a36a3c72fcebb1b5f}{digital\+Toggle}} (uint8\+\_\+t port)
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_a3fb6d4218f75570a71f9b07ebd58a718}{on}} (uint8\+\_\+t port)
+\item 
+void \mbox{\hyperlink{classPortExpanderI2C_af037e0a92ca4f4ff8a8aca6d9cb70bba}{off}} (uint8\+\_\+t port)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classPortExpanderI2C_a514a669283125d213aff4eb4d58f17d9}{digital\+Read}} (uint8\+\_\+t port)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classPortExpanderI2C_a460246e95331ace4c1f5f15199098c4c}{digital\+Read\+All}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPortExpanderI2C_ae4f051ad2540a810dfd9edaa8e03c5f7}\label{classPortExpanderI2C_ae4f051ad2540a810dfd9edaa8e03c5f7}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!PortExpanderI2C@{PortExpanderI2C}}
+\index{PortExpanderI2C@{PortExpanderI2C}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{PortExpanderI2C()}{PortExpanderI2C()}}
+{\footnotesize\ttfamily Port\+Expander\+I2\+C\+::\+Port\+Expander\+I2C (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+This lib is an implementation of port expander using I2C protocol. 
+
+@constructor @abstract Class constructor @discussion Initialize the class and set all the pins as off 
+\begin{DoxyParams}{Parameters}
+{\em address} & i2c chip address\\
+\hline
+\end{DoxyParams}
+Created by Esdras Xavier Raimundo on 13/05/2018 \begin{DoxyAuthor}{Author}
+Esdras Xavier \href{mailto:esdrasxa@gmail.com}{\texttt{ esdrasxa@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 13/05/2018
+\end{DoxyVersion}
+@reference\+: Library based on\+:
+\begin{DoxyItemize}
+\item \href{https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library}{\texttt{ https\+://github.\+com/fdebrabander/\+Arduino-\/\+Liquid\+Crystal-\/\+I2\+C-\/library}}
+\item \href{http://blog.iharder.net/2014/08/08/msp430-or-arduino-library-for-pcf8574-i2c-port-expander/}{\texttt{ http\+://blog.\+iharder.\+net/2014/08/08/msp430-\/or-\/arduino-\/library-\/for-\/pcf8574-\/i2c-\/port-\/expander/}} 
+\end{DoxyItemize}\mbox{\Hypertarget{classPortExpanderI2C_a0720aaddf0dee2b43435b2df22a52a25}\label{classPortExpanderI2C_a0720aaddf0dee2b43435b2df22a52a25}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!````~PortExpanderI2C@{$\sim$PortExpanderI2C}}
+\index{````~PortExpanderI2C@{$\sim$PortExpanderI2C}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{$\sim$PortExpanderI2C()}{~PortExpanderI2C()}}
+{\footnotesize\ttfamily Port\+Expander\+I2\+C\+::$\sim$\+Port\+Expander\+I2C (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@desconstructor @abstract Destroy the object and ends the trasmission 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPortExpanderI2C_a514a669283125d213aff4eb4d58f17d9}\label{classPortExpanderI2C_a514a669283125d213aff4eb4d58f17d9}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!digitalRead@{digitalRead}}
+\index{digitalRead@{digitalRead}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{digitalRead()}{digitalRead()}}
+{\footnotesize\ttfamily uint8\+\_\+t Port\+Expander\+I2\+C\+::digital\+Read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+@method @abstract Get the port state @discussion Read the port and return the state 
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to read. Use P0...P7 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Will return H\+I\+GH or L\+OW 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPortExpanderI2C_a460246e95331ace4c1f5f15199098c4c}\label{classPortExpanderI2C_a460246e95331ace4c1f5f15199098c4c}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!digitalReadAll@{digitalReadAll}}
+\index{digitalReadAll@{digitalReadAll}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{digitalReadAll()}{digitalReadAll()}}
+{\footnotesize\ttfamily uint8\+\_\+t Port\+Expander\+I2\+C\+::digital\+Read\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@method @abstract Get the port state @discussion Read the all the ports port and return the state \begin{DoxyReturn}{Returns}
+Will return H\+I\+GH or L\+OW 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPortExpanderI2C_a7c686d2a180ca46a36a3c72fcebb1b5f}\label{classPortExpanderI2C_a7c686d2a180ca46a36a3c72fcebb1b5f}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!digitalToggle@{digitalToggle}}
+\index{digitalToggle@{digitalToggle}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{digitalToggle()}{digitalToggle()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::digital\+Toggle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+@method @abstract Invert the port state @discussion Change the actual state of a port, case is H\+I\+GH set to L\+OW, case L\+OW set to H\+I\+GH 
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to change the state. Use P0...P7 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPortExpanderI2C_abcf3cb2908c42bf061933a19b714dc73}\label{classPortExpanderI2C_abcf3cb2908c42bf061933a19b714dc73}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!digitalWrite@{digitalWrite}}
+\index{digitalWrite@{digitalWrite}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{digitalWrite()}{digitalWrite()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::digital\+Write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port,  }\item[{uint8\+\_\+t}]{level }\end{DoxyParamCaption})}
+
+@method @abstract Set the port to high or low @discussion Will turn on or off the port 
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to change the state. Use P0...P7 \\
+\hline
+{\em level} & The level of the port, H\+I\+GH or L\+OW \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPortExpanderI2C_a0f734bdb394c1cf0deebd053ca9a3593}\label{classPortExpanderI2C_a0f734bdb394c1cf0deebd053ca9a3593}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!digitalWriteAll@{digitalWriteAll}}
+\index{digitalWriteAll@{digitalWriteAll}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{digitalWriteAll()}{digitalWriteAll()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::digital\+Write\+All (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{levels }\end{DoxyParamCaption})}
+
+@method @abstract Configure all ports @discussion This method will change all ports states at same time 
+\begin{DoxyParams}{Parameters}
+{\em levels} & The level of the port, H\+I\+GH or L\+OW \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPortExpanderI2C_ac997f79ae241b47627bd6f74a006c1d4}\label{classPortExpanderI2C_ac997f79ae241b47627bd6f74a006c1d4}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!init@{init}}
+\index{init@{init}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@method @abstract Object initializer @discussion This method exists because on arduino you must to fallow an order of initialization, and to be able to conect using i2c you have to wait until the setup be called, otherwise the arduino will crash. So call this method on setup \mbox{\Hypertarget{classPortExpanderI2C_af037e0a92ca4f4ff8a8aca6d9cb70bba}\label{classPortExpanderI2C_af037e0a92ca4f4ff8a8aca6d9cb70bba}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!off@{off}}
+\index{off@{off}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{off()}{off()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::off (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+@method @abstract Turn off a port @discussion Will turn the port to L\+OW 
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to change the state. Use P0...P7 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPortExpanderI2C_a3fb6d4218f75570a71f9b07ebd58a718}\label{classPortExpanderI2C_a3fb6d4218f75570a71f9b07ebd58a718}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!on@{on}}
+\index{on@{on}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::on (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+@method @abstract Turn on a port @discussion Will turn the port to H\+I\+GH 
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to change the state. Use P0...P7 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPortExpanderI2C_ab3ddb549621ef8622af037eed5171b71}\label{classPortExpanderI2C_ab3ddb549621ef8622af037eed5171b71}} 
+\index{PortExpanderI2C@{PortExpanderI2C}!pinMode@{pinMode}}
+\index{pinMode@{pinMode}!PortExpanderI2C@{PortExpanderI2C}}
+\subsubsection{\texorpdfstring{pinMode()}{pinMode()}}
+{\footnotesize\ttfamily void Port\+Expander\+I2\+C\+::pin\+Mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port,  }\item[{uint8\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+@method @abstract Define the pin port mode @discussion Will define the port to input or output 
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to use as input or output. Use P0...P7 \\
+\hline
+{\em mode} & The mode to the port works as input or output \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Port\+Expander\+I2\+C.\+hpp\item 
+Port\+Expander\+I2\+C.\+cpp\end{DoxyCompactItemize}
